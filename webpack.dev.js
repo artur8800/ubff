@@ -14,18 +14,19 @@ module.exports = merge(common, {
   },
   target: 'web',
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    port: 9000,
-    overlay: {
-      warnings: true,
-      errors: true
-    },
-    liveReload: true,
-    hot: true,
+    watchFiles: ['src/*'],
 
-    watchOptions: {
-      poll: true,
-      ignored: "/node_modules/"
-    }
+    //contentBase: path.join(__dirname, "dist"),
+    port: 9000,
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+
+      },
+    },
+
+    liveReload: true,
+    hot: false
   }
 });

@@ -1,0 +1,40 @@
+.page__footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer__navigation__list {
+    display: inline-block;
+}
+
+.footer__navigation__item {
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer__heading,
+.footer__logo {
+    margin-bottom: 24px;
+}
+
+.icons__list__item {
+    float: left;
+}
+
+.mobile__footer {
+    .icon__list {
+        display: inline-block;
+        float: right;
+    }
+    .icon__list__item {
+        float: left;
+        margin-left: 30px;
+    }
+    .lang__list {
+        @extend .icon__list;
+    }
+    .lang__list__item {
+        @extend .icon__list__item;
+    }
+}

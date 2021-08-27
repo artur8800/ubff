@@ -1,0 +1,53 @@
+.button__rounded {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    padding: 14px 24px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.button-blue {
+    background-color: $blue1;
+    border: 2px solid $blue1;
+    color: #fff;
+    &:hover {
+        color: $blue1;
+        background-color: #fff;
+    }
+}
+
+.navigation__button {
+    box-sizing: border-box;
+    font-weight: bold;
+    display: block;
+    height: 72px;
+    line-height: 68px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-transform: uppercase;
+}
+
+.svg__button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    svg {
+        display: block;
+        margin: 0 auto;
+        fill: #ffffff;
+        &:hover,
+        &:focus,
+        &:active {
+            fill: $blue1;
+            cursor: pointer;
+        }
+    }
+}

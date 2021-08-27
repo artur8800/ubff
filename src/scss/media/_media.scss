@@ -1,0 +1,15 @@
+@media #{$medium-and-down} {
+    .navigation {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+    .banner__section {
+        // padding: 0 !important;
+        .banner__image {
+            float: none;
+        }
+    }
+}

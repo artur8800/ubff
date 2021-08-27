@@ -1,0 +1,57 @@
+/* Position */
+
+html {
+    font-size: 14px;
+}
+
+.left-block {
+    float: left;
+}
+
+.right-block {
+    float: right;
+}
+
+.heading__block {
+    padding: 0 0 40px 0;
+}
+
+.bg-gray-6 {
+    background-color: $gray6;
+}
+
+.section {
+    padding: 64px 0 64px 0;
+}
+
+.copyrights {
+    &:before {
+        content: "\00a9";
+        color: #fff;
+    }
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.page-input {
+    box-sizing: border-box;
+    border: 1px solid $gray4;
+    color: $gray4;
+    width: 278px;
+    height: 56px;
+    padding: 13px 20px 13px 20px;
+    border-radius: 6px;
+    &:focus {
+        outline: none !important;
+        border-color: $blue1;
+        color: $gray1;
+    }
+}
+
+.page__search {
+    line-height: 68px;
+}

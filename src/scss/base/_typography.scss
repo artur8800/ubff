@@ -1,0 +1,67 @@
+a {
+    line-height: 1.35;
+    font-size: 14px;
+    font-family: $osans;
+    font-weight: 400;
+}
+
+b {
+    color: #000;
+}
+
+.text-blue {
+    color: $blue1;
+}
+
+.banner__title {
+    font-family: $rubik;
+    font-weight: 800;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.main-title {
+    color: #000;
+    font-family: $rubik;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.post-title {
+    font-family: $rubik;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: $gray1;
+}
+
+.news__date {
+    color: $gray3;
+    font-family: $osans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer__heading {
+    @extend .post-title;
+    color: #fff;
+}
+
+.small-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: rgba($color: #000000, $alpha: .56)
+}
+
+.footer__bottom__text {
+    @extend .small-text;
+}

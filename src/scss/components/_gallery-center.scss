@@ -1,0 +1,37 @@
+.swiper__left>.swiper__card {
+    float: right;
+}
+
+.swiper__center {
+    min-width: 300px;
+}
+
+.swiper__container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper__row {
+    display: flex;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.swiper__card {
+    display: flex;
+    margin: 20px;
+}
+
+.swiper__left>.swiper__card {
+    float: right;
+}
+
+.swiper__right>.swiper__card {
+    float: left;
+}
+
+.gallery {
+    padding: 64px 0;
+    text-align: center;
+}

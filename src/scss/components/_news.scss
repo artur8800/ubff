@@ -1,0 +1,30 @@
+.news__item {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news__link {
+    display: block;
+}
+
+.news__image {
+    max-width: 360px;
+    max-height: 208px;
+}
+
+.news__image,
+.news__title {
+    margin-bottom: 16px;
+}
+
+.button__wrapper {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.news__section {
+    .news__item {
+        margin-bottom: 40px;
+    }
+}

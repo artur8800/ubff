@@ -3,8 +3,6 @@ const common = require("./webpack.common.js");
 const webpack = require("webpack");
 const path = require("path");
 
-// const HotModuleReplacementPlugin = require("HotModuleReplacementPlugin");
-
 module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
@@ -15,8 +13,6 @@ module.exports = merge(common, {
   target: 'web',
   devServer: {
     watchFiles: ['src/*'],
-
-    //contentBase: path.join(__dirname, "dist"),
     port: 9000,
     client: {
       overlay: {

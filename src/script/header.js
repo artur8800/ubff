@@ -1,10 +1,15 @@
-// const init = (el) => (function() {
-//    const selector = document.getElementById(el);
-//     selector.addEventListener('click', function() {
-//         if (this.className.indexOf('mobile__navigation') < 0) {
-//             this.classList.add('mobile__navigation')
-//         }
-//     }, false);
-// })();
+function pageHeader() {
+  $(".burger-menu")
+    .click(function(event) {
+      event.preventDefault();
+      $(this)
+        .toggleClass("menu-active");
 
-// module.exports = init;
+      $('body')
+        .toggleClass("overflow-hidden");
+
+      $('.mobile__menu')
+        .toggleClass('menu-open')
+    });
+}
+module.exports = pageHeader;

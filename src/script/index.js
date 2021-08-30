@@ -16,8 +16,9 @@ import Print from "./print";
 // import FontRegular from "../fonts/Rubik-Regular.ttf";
 // import FontBold from "../fonts/Rubik-Bold.ttf";
 // import ExtraBold from "../fonts/Rubik-ExtraBold.ttf";
-// import init from "../script/header";
+import pageHeader from "../script/header";
 
+pageHeader();
 jQuery(function() {
   let itemCard = $(".swiper__gallery img");
 
@@ -41,18 +42,6 @@ jQuery(function() {
         });
     });
 
-  $(".burger-menu")
-    .click(function(event) {
-      event.preventDefault();
-      $(this)
-        .toggleClass("menu-active");
-
-      $('body')
-        .toggleClass("overflow-hidden");
-
-      $('.mobile__menu')
-        .toggleClass('menu-open')
-    });
 })
 
 const swipe = new Swipable("imageGallery");

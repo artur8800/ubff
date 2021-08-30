@@ -59,3 +59,15 @@ html {
 .page__search {
     line-height: 68px;
 }
+
+.page__label {
+    padding: 6px 12px;
+    border: 1px solid $gray4;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: $gray2;
+    display: inline-block;
+}

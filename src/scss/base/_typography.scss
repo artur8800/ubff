@@ -65,3 +65,11 @@ b {
 .footer__bottom__text {
     @extend .small-text;
 }
+
+.page__label {
+    font-family: $osans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+}

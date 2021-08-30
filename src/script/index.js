@@ -45,13 +45,13 @@ jQuery(function() {
     .click(function(event) {
       event.preventDefault();
       $(this)
-        .toggleClass("menu-on");
+        .toggleClass("menu-active");
 
       $('body')
-        .toggleClass("mobile_open");
+        .toggleClass("overflow-hidden");
 
       $('.mobile__menu')
-        .toggleClass('menu_open')
+        .toggleClass('menu-open')
     });
 })
 

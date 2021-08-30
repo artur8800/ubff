@@ -57,7 +57,7 @@ body {
 
 .burger {
     position: absolute;
-    background: rgba(111, 111, 111, 1);
+    background: #000;
     width: 100%;
     height: 2px;
     top: 50%;
@@ -68,7 +68,7 @@ body {
 
 .burger::before {
     position: absolute;
-    background: rgba(0, 0, 0, 1);
+    background: #000;
     width: 25px;
     height: 2px;
     top: 8px;
@@ -78,7 +78,7 @@ body {
 
 .burger::after {
     position: absolute;
-    background: rgba(0, 0, 0, 1);
+    background: #000;
     width: 25px;
     height: 2px;
     bottom: 8px;
@@ -93,39 +93,40 @@ body {
     -webkit-transition: all .3s ease-in-out;
 }
 
-.burger-menu.menu-on .burger::after {
+.burger-menu.menu-active .burger::after {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     bottom: 0px;
 }
 
-.burger-menu.menu-on .burger::before {
+.burger-menu.menu-active .burger::before {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     top: 0px;
 }
 
-.burger-menu.menu-on .burger {
+.burger-menu.menu-active .burger {
     background: rgba(111, 111, 111, .0);
 }
 
-.mobile_open {
-    overflow: hidden;
-}
-
 .mobile__menu {
-    display: none;
+    visibility: hidden;
     background-color: #fff;
     width: 100%;
     max-width: 100%;
     position: absolute;
     left: 0;
     right: 0;
-    top: 72px;
+    top: -100vh;
     bottom: 0;
     height: 100vh;
     max-width: 100%;
     z-index: 999;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
 
 .mobile__navigation {
@@ -159,6 +160,7 @@ body {
     }
 }
 
-.menu_open {
-    display: block;
+.menu-open {
+    visibility: visible;
+    top: 72px;
 }

@@ -4,8 +4,17 @@
     margin-right: auto;
 }
 
-.news__link {
+.news__link,
+.membership__link {
     display: block;
+}
+
+.news__date {
+    color: $gray3;
+    font-family: $osans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .news__image {
@@ -27,4 +36,25 @@
     .news__item {
         margin-bottom: 40px;
     }
+}
+
+.membership__item {
+    max-width: 260px;
+    margin: 0 auto 40px auto;
+}
+
+.membership__image__block {
+    margin-bottom: 16px;
+}
+
+.membership__image {
+    max-height: 360px;
+}
+
+.membership__title {
+    margin-bottom: 4px;
+}
+
+.membership__role {
+    @extend .news__date;
 }

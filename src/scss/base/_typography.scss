@@ -42,14 +42,6 @@ b {
     color: $gray1;
 }
 
-.news__date {
-    color: $gray3;
-    font-family: $osans;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 .footer__heading {
     @extend .post-title;
     color: #fff;

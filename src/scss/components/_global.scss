@@ -12,6 +12,10 @@ html {
     float: right;
 }
 
+.align-center {
+    text-align: center;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -26,6 +30,12 @@ html {
 
 .section {
     padding: 64px 0 64px 0;
+}
+
+a {
+    &:visited {
+        color: $blue1;
+    }
 }
 
 .copyrights {
@@ -58,6 +68,10 @@ html {
 
 .page__search {
     line-height: 68px;
+}
+
+.label__wrapper {
+    margin-bottom: 40px;
 }
 
 .page__label {

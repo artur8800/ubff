@@ -13,6 +13,7 @@ module.exports = {
     print: "./src/script/print.js",
     about: "./src/script/about.js",
     team: "./src/script/team.js",
+    team_member: "./src/script/team_member.js",
     gallery: "./src/script/gallery.js"
   },
   output: {
@@ -34,8 +35,7 @@ module.exports = {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
 
         exclude: /(node_modules)/,
@@ -48,10 +48,8 @@ module.exports = {
 
         use: [
           // fallback to style-loader in development
-          process.env.NODE_ENV !== "production"
-            ?
-          "style-loader"
-            :
+          process.env.NODE_ENV !== "production" ?
+          "style-loader" :
           MiniCssExtractPlugin.loader,
           {
             loader: MiniCssExtractPlugin.loader,
@@ -93,15 +91,13 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "fonts"
-            }
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "fonts"
           }
-        ]
+        }]
       }
     ]
   },
@@ -144,6 +140,13 @@ module.exports = {
       filename: "gallery.html",
       chunks: ["gallery"],
       template: "src/templates/gallery.html",
+
+      inject: "body"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "team_member.html",
+      chunks: ["team_member"],
+      template: "src/templates/team_member.html",
 
       inject: "body"
     }),

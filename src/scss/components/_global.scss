@@ -85,3 +85,15 @@ a {
     color: $gray2;
     display: inline-block;
 }
+
+.social__list {
+    display: inline-block;
+    .social__item {
+        float: left;
+        margin-right: 16px;
+    }
+}
+
+.post__text {
+    margin-top: 40px;
+}

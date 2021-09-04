@@ -58,3 +58,10 @@
 .membership__role {
     @extend .news__date;
 }
+
+.membership__list {
+    display: inline-block;
+    .social__item {
+        float: left;
+    }
+}

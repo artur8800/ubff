@@ -20,6 +20,12 @@
         color: $blue1;
         background-color: #fff;
     }
+    &:visited {
+        color: #fff;
+    }
+    &:visited:hover {
+        color: $blue1;
+    }
 }
 
 .navigation__button {
@@ -54,8 +60,9 @@
 
 .prev__link {
     position: relative;
-    padding-left: 0;
+    padding: 0;
     font-weight: 700;
+    margin-left: 23px;
     &::before {
         content: " ";
         display: block;
@@ -76,4 +83,15 @@
 
 .page__navigation {
     color: $blue1;
+    margin-bottom: 40px;
+}
+
+.social__button {
+    display: block;
+    padding: 10px 16px;
+    border: 1px solid $blue1;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 52px;
+    height: 40px;
 }

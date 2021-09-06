@@ -66,6 +66,10 @@ b {
     line-height: 160%;
 }
 
-.page__labe {
+.page__label {
     @extend .post__text;
+}
+
+.post__blockquote {
+    @extend .post-title;
 }

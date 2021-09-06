@@ -55,8 +55,16 @@
     margin-bottom: 4px;
 }
 
-.membership__role {
+.membership__role__item {
     @extend .news__date;
+}
+
+.caption {
+    @extend .news__date;
+}
+
+.post__image__caption {
+    margin-top: 16px;
 }
 
 .membership__list {
@@ -64,4 +72,16 @@
     .social__item {
         float: left;
     }
+}
+
+.membership__main__info {
+    .membership__role {
+        margin-bottom: 40px;
+    }
+}
+
+.post__item {}
+
+.post__image__container {
+    margin-bottom: 40px;
 }

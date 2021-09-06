@@ -8,13 +8,20 @@ const folderPath = path.resolve(__dirname, "./src/templates/");
 
 module.exports = {
   entry: {
+
     index: "./src/script/index.js",
     news: "./src/script/news.js",
     print: "./src/script/print.js",
     about: "./src/script/about.js",
     team: "./src/script/team.js",
-    team_member: "./src/script/team_member.js",
-    gallery: "./src/script/gallery.js"
+    news_item: "./src/script/news_item.js",
+    team_member: {
+      import: "./src/script/team_member.js",
+      dependOn: 'shared'
+    },
+    gallery: "./src/script/gallery.js",
+
+    shared: './src/script/header.js'
   },
   output: {
     filename: "script/[name].js",
@@ -23,13 +30,14 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
+
       cacheGroups: {
         common: {
           name: "common",
           filename: "script/[name]/[name].[chunkhash:8].js",
           test: /[\\/]node_modules[\\/]/,
           chunks: "all",
-          minSize: 0
+          //  minSize: 0
         }
       }
     }
@@ -147,6 +155,13 @@ module.exports = {
       filename: "team_member.html",
       chunks: ["team_member"],
       template: "src/templates/team_member.html",
+
+      inject: "body"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "news_item.html",
+      chunks: ["news_item"],
+      template: "src/templates/news_item.html",
 
       inject: "body"
     }),

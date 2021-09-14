@@ -165,6 +165,7 @@ module.exports = {
 
       inject: "body"
     }),
+
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash:8].css"
     }),

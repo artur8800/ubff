@@ -1,6 +1,6 @@
 function pageHeader() {
 
-  $(".burger-menu")
+  $(".burger__menu")
     .click(function(event) {
       event.preventDefault();
       $(this)

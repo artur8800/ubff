@@ -1,14 +1,11 @@
 /* Banner styles */
 
-
-
 .banner__wrapper {
     height: 648px;
     padding-top: 33px;
     position: relative;
 }
-  
-  
+
 .banner__image {
     position: absolute;
     right: 0;
@@ -17,9 +14,9 @@
     -moz-transform: translateX(-160px);
     -ms-transform: translateX(-160px);
     -o-transform: translateX(-160px);
-  }
-  
-  .banner__image::before {
+}
+
+.banner__image::before {
     display: block;
     content: " ";
     width: 50px;
@@ -28,9 +25,9 @@
     right: -25px;
     top: -25px;
     background: url(../../img/Union-top.svg);
-  }
-  
-  .banner__image::after {
+}
+
+.banner__image::after {
     display: block;
     content: " ";
     width: 50px;
@@ -39,25 +36,12 @@
     left: -25px;
     bottom: -25px;
     background: url(../../img/Union.svg);
-  }
-  
-  .banner__info {
+}
+
+.banner__info {
     position: relative;
     padding-top: 79px;
-
     .banner__title {
         margin-bottom: 40px;
-    }
-  }
-
-
-
-@media #{$medium-only} {
-    .banner__wrapper {
-        height: 720px;
-        padding-top: 105px;
-    }
-    .banner__image {
-        top: 105px;
     }
 }

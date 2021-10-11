@@ -29,15 +29,10 @@ module.exports = merge(common, {
     new PurgeCSSPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
     }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].[contenthash:8].css"
+    }),
 
-    new HtmlCriticalWebpackPlugin({
-      base: path.resolve(__dirname, "dist"),
-      src: "index.html",
-      dest: "critical/critical.html",
 
-      inline: false,
-      minify: true,
-      extract: false
-    })
   ]
 });

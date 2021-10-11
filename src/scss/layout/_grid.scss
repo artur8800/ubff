@@ -16,14 +16,14 @@
 }
 
 @media #{$medium-and-down} {
-    // .container {
-    //     padding-left: (1 * $gutter-width-small / 2);
-    //     padding-right: (1 * $gutter-width-small / 2);
-    // }
-    // .row {
-    //     margin-left: (-1 * $gutter-width-small / 2);
-    //     margin-right: (-1 * $gutter-width-small / 2);
-    // }
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
 }
 
 @media #{$large-and-up} {

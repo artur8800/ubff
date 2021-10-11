@@ -19,6 +19,13 @@
     }
 }
 
+@media #{$medium-only} {
+    html,
+    body {
+        font-size: 12px;
+    }
+}
+
 @media #{$medium-and-down} {
     .container {
         max-width: 100%;

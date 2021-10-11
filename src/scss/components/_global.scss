@@ -100,6 +100,7 @@ a {
 
 .post__text {
     margin-bottom: 40px;
+    word-break: break-word;
 }
 
 .left-image {
@@ -130,4 +131,14 @@ a {
         top: -30px;
         left: -30px;
     }
+}
+
+.partners__item {
+    display: block;
+    text-align: center;
+}
+
+.post__image__block {
+    margin-bottom: 20px;
+    text-align: center;
 }

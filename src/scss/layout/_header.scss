@@ -27,7 +27,8 @@
 }
 
 .header__navigation__links {
-    color: #000;
+    color: inherit;
+    font-size: inherit;
     &:hover {
         color: $blue1;
     }
@@ -36,6 +37,10 @@
 .header__navigation__item {
     float: left;
     margin-left: 40px;
+}
+
+.header__navigation__item:last-child a {
+    font-weight: bold;
 }
 
 .header__logo__img {

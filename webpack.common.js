@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 const folderPath = path.resolve(__dirname, "./src/templates/");
@@ -115,7 +115,9 @@ module.exports = {
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new webpack.ProgressPlugin(),
 
-
+    new MiniCssExtractPlugin({
+      filename: "css/[name].[contenthash:8].css"
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"

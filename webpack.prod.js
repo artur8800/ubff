@@ -4,7 +4,7 @@ const common = require("./webpack.common.js");
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 const PurgeCSSPlugin = require("purgecss-webpack-plugin");
 const path = require("path");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const PATHS = {
   src: path.join(__dirname, "src")

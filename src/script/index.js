@@ -1,3 +1,4 @@
+console.log('gggg')
 import $ from "jquery";
 // import Swiper JS
 import Swipable from "./swipeble";
@@ -17,33 +18,33 @@ import Print from "./print";
 // import FontBold from "../fonts/Rubik-Bold.ttf";
 // import ExtraBold from "../fonts/Rubik-ExtraBold.ttf";
 import pageHeader from "../script/header";
-
 pageHeader();
-jQuery(function() {
-  let itemCard = $(".swiper__gallery img");
 
-  itemCard.each(function() {
-    let imageSrc = $(this)
-      .attr("src");
+// jQuery(function() {
+//   let itemCard = $(".swiper__gallery img");
 
-    $(this)
-      .wrap(`<a class="swiper__link" href="${imageSrc}"></a>`);
-  });
+//   itemCard.each(function() {
+//     let imageSrc = $(this)
+//       .attr("src");
 
-  $(".swiper__gallery")
-    .each(function() {
-      $(this)
-        .magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: {
-            enabled: true
-          }
-        });
-    });
+//     $(this)
+//       .wrap(`<a class="swiper__link" href="${imageSrc}"></a>`);
+//   });
 
-})
+//   $(".swiper__gallery")
+//     .each(function() {
+//       $(this)
+//         .magnificPopup({
+//           delegate: "a",
+//           type: "image",
+//           gallery: {
+//             enabled: true
+//           }
+//         });
+//     });
 
-const swipe = new Swipable("imageGallery");
+// })
+
+// const swipe = new Swipable("imageGallery");
 
 // init("menu");

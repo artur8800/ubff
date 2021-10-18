@@ -1,4 +1,5 @@
 const glob = require("glob");
+const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
@@ -31,6 +32,10 @@ module.exports = merge(common, {
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash:8].css"
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     }),
 
 

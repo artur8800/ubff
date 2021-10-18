@@ -15,7 +15,7 @@ module.exports = merge(common, {
   target: 'web',
   devServer: {
     watchFiles: ['src/*'],
-    port: 9000,
+    port: 3000,
     client: {
       overlay: {
         errors: true,

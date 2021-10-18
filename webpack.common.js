@@ -15,13 +15,8 @@ module.exports = {
     about: "./src/script/about.js",
     team: "./src/script/team.js",
     news_item: "./src/script/news_item.js",
-    team_member: {
-      import: "./src/script/team_member.js",
-      dependOn: 'shared'
-    },
+    team_member: "./src/script/team_member.js",
     gallery: "./src/script/gallery.js",
-
-    shared: './src/script/header.js'
   },
   output: {
     filename: "script/[name].js",
